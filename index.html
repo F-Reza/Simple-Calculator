@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>| Simple Calculator |</title>
+	
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--/*---------------------
+Authorized::Forhad Reza
+-----------*/-->
+<content>
+<div id="main_wrapper">
+	
+	<fieldset>
+	<form id="calculator" name="cal">
+	<legend> Simple Calculator </legend> <hr />
+		<!-- Display -->
+		<input type="text" id="display" name="txt" readonly="" value="" placeholder="0"/><hr /><br />
+		
+		<!-- Switch -->
+		<input type="radio" name="switch" value="on" checked>ON
+		<input type="radio" name="switch" value="off">OFF <br/><br />
+		
+		<input type="button" class="var1 mic" name="Audio" value="Mic" onclick="on/off"/>
+		<input type="button" class="var1" name="btn" value="&radic;" onclick="squerRoot(btn.value)"/>
+		<input type="button" class="var1" name="btnL" value="(" onclick="displayNum(btnL.value)"/>
+		<input type="button" class="var1" name="btnR" value=")" onclick="displayNum(btnR.value)"/>
+		<br />
+		
+		<!---->
+		<input type="button" class="var clr" name="Clear" value="Clr" onclick="numClear()"/>
+		<input type="button" class="var del" name="Delete" value="Del" onclick="numBack(cal.txt.value)"/>
+		<input type="button" class="var alu" name="Prcnt" value="%" onclick="displayNum(Prcnt.value)"/>
+		<input type="button" class="var alu" name="Div" value="/" onclick="displayNum(Div.value)"/><br />
+		
+		<input type="button" class="var" name="btn7" value="7" onclick="displayNum(btn7.value)"/>
+		<input type="button" class="var" name="btn8" value="8" onclick="displayNum(btn8.value)"/>
+		<input type="button" class="var" name="btn9" value="9" onclick="displayNum(btn9.value)"/>
+		<input type="button" class="var alu" name="Mul" value="*" onclick="displayNum(Mul.value)"/><br />
+		<input type="button" class="var" name="btn4" value="4" onclick="displayNum(btn4.value)"/>
+		<input type="button" class="var" name="btn5" value="5" onclick="displayNum(btn5.value)"/>
+		<input type="button" class="var" name="btn6" value="6" onclick="displayNum(btn6.value)"/>
+		<input type="button" class="var alu" name="Sub" value="-" onclick="displayNum(Sub.value)"/><br />
+		<input type="button" class="var" name="btn1" value="1" onclick="displayNum(btn1.value)"/>
+		<input type="button" class="var" name="btn2" value="2" onclick="displayNum(btn2.value)"/>
+		<input type="button" class="var" name="btn3" value="3" onclick="displayNum(btn3.value)"/>
+		<input type="button" class="var alu plus" name="Add" value="+" onclick="displayNum(Add.value)"/><br />
+		<input type="button" class="var point" name="Point" value="." onclick="displayNum(Point.value)"/>
+		<input type="button" class="var" name="Zero" value="0" onclick="displayNum(Zero.value)"/>
+		
+		<input type="button" class="var equal" name="Equal" value="=" onclick="txt.value=eval(txt.value)"/>
+		
+	</form>
+	</fieldset>
+	
+<!--/*---------------------
+Authorized::Forhad Reza
+-----------*/-->
+
+	<!-- Footer -->
+	<footer>
+		<div id="footer">
+			<p>&copy All Right Reserved By <a href="https://web.facebook.com/NextDigitOfficial/" target="_blank"> Next_Digit </a></p>
+		</div>
+	</footer>
+</div>	
+</content>	
+<!-- Javascript -->	
+<script src="myscript.js"></script>
+</body>
+</html>
